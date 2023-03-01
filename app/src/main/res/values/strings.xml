@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">month6_lesson3</string>
+    <string name="create">Create</string>
+    <string name="create_your_hashtag">Create your hashtag</string>
+    <string name="toast">The folder is empty.No currently items found!</string>
+</resources>

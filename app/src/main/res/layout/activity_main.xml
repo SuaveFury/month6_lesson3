@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+    <com.google.android.material.button.MaterialButton
+        android:backgroundTint="@color/orange"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/et_main"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/btn_main"
+        android:layout_marginTop="50dp"
+        android:layout_height="60dp"
+        app:cornerRadius="17dp"
+        android:layout_width="220dp"
+        android:text="@string/create"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/et_main"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="18dp"
+        android:hint="@string/create_your_hashtag"
+        android:paddingStart="20dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/rv_item"
+        android:visibility="invisible"
+        tools:itemCount="8"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_above="@+id/et_main"/>
+</RelativeLayout>
